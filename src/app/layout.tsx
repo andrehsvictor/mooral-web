@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import ThemeProviderWrapper from "./theme-provider";
+import type { Metadata } from 'next';
+import './globals.css';
+import ThemeProviderWrapper from './theme-provider';
 
 export const metadata: Metadata = {
-  title: "Mooral"
+  title: 'Mooral',
 };
 
 export default function RootLayout({
@@ -14,9 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        <ThemeProviderWrapper>
-          {children}
-        </ThemeProviderWrapper>
+        <ThemeProviderWrapper>{children}</ThemeProviderWrapper>
       </body>
     </html>
   );

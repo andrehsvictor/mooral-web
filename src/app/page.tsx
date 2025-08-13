@@ -1,5 +1,16 @@
-import { Button, Typography, Container, Box, Card, CardContent } from '@mui/material';
-import { Home as HomeIcon, Star as StarIcon, Favorite as FavoriteIcon } from '@mui/icons-material';
+import {
+  Button,
+  Typography,
+  Container,
+  Box,
+  Card,
+  CardContent,
+} from '@mui/material';
+import {
+  Home as HomeIcon,
+  Star as StarIcon,
+  Favorite as FavoriteIcon,
+} from '@mui/icons-material';
 
 export default function Home() {
   return (
@@ -9,12 +20,26 @@ export default function Home() {
           <HomeIcon sx={{ mr: 2, fontSize: 'inherit' }} />
           Mooral Web
         </Typography>
-        
-        <Typography variant="h5" component="h2" gutterBottom align="center" color="text.secondary">
+
+        <Typography
+          variant="h5"
+          component="h2"
+          gutterBottom
+          align="center"
+          color="text.secondary"
+        >
           Bem-vindo ao seu projeto com Material UI!
         </Typography>
 
-        <Box sx={{ mt: 4, display: 'flex', gap: 2, justifyContent: 'center', flexWrap: 'wrap' }}>
+        <Box
+          sx={{
+            mt: 4,
+            display: 'flex',
+            gap: 2,
+            justifyContent: 'center',
+            flexWrap: 'wrap',
+          }}
+        >
           <Button variant="contained" startIcon={<StarIcon />}>
             Botão Principal
           </Button>
@@ -29,8 +54,9 @@ export default function Home() {
               Material UI está funcionando!
             </Typography>
             <Typography variant="body1">
-              Este é um exemplo de como usar componentes do Material UI em seu projeto Next.js.
-              Você agora tem acesso a todos os componentes e ícones do Material UI.
+              Este é um exemplo de como usar componentes do Material UI em seu
+              projeto Next.js. Você agora tem acesso a todos os componentes e
+              ícones do Material UI.
             </Typography>
           </CardContent>
         </Card>
