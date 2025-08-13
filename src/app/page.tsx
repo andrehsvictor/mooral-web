@@ -20,20 +20,38 @@ export default function Home() {
       <Typography variant="body1" align="center" color="text.secondary">
         Your application is ready!
       </Typography>
-      <Link href="/login" passHref>
-        <Button
-          variant="contained"
-          size="large"
-          sx={{
-            backgroundColor: 'primary.main',
-            '&:hover': {
-              backgroundColor: '#2c4461',
-            },
-          }}
-        >
-          Go to Login
-        </Button>
-      </Link>
+      <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
+        <Link href="/login" passHref>
+          <Button
+            variant="contained"
+            size="large"
+            sx={{
+              backgroundColor: 'primary.main',
+              '&:hover': {
+                backgroundColor: '#2c4461',
+              },
+            }}
+          >
+            Go to Login
+          </Button>
+        </Link>
+        <Link href="/dashboard" passHref>
+          <Button
+            variant="outlined"
+            size="large"
+            sx={{
+              borderColor: 'primary.main',
+              color: 'primary.main',
+              '&:hover': {
+                backgroundColor: 'primary.main',
+                color: 'white',
+              },
+            }}
+          >
+            View Dashboard
+          </Button>
+        </Link>
+      </Box>
     </Box>
   );
 }
