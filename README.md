@@ -10,3 +10,4 @@ Post: an individual piece of content within a mural, which can include text, ima
 - Collaborate with others on a mural
 - See how my mural is performing (views, likes, comments)
 - Get inspired by other murals
+- Example of shareable mural link: https://mooral.com/{username} (Then it returns the user's mural with all its posts)
