@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import ThemeProviderWrapper from './theme-provider';
 
 export const metadata: Metadata = {
   title: 'Mooral',
@@ -13,9 +12,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
-        <ThemeProviderWrapper>{children}</ThemeProviderWrapper>
-      </body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
