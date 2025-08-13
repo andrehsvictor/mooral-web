@@ -153,7 +153,7 @@ export default function DashboardPage() {
   };
 
   return (
-    <Box sx={{ backgroundColor: '#f8f9fa', minHeight: '100vh', py: 3 }}>
+    <Box sx={{ backgroundColor: '#faf8f5', minHeight: '100vh', py: 3 }}>
       <Container maxWidth="lg">
         {/* Header */}
         <Box sx={{ mb: 4 }}>
